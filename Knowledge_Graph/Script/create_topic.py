@@ -50,8 +50,8 @@ def save_topic_results(persona_name, descriptions, output_path):
 # === Main pipeline ===
 def main():
     persona_name = "Alan Turing"
-    input_path = "alan_turing_chunks.json"     # Input JSON with "descriptions"
-    output_path = "alan_turing_topics.json"    # Output with topics added
+    input_path = "../JSON/alan_turing_chunks.json"     # Input JSON with "descriptions"
+    output_path = "../JSON/alan_turing_topics.json"    # Output with topics added
 
     descriptions = load_descriptions(input_path)
     chunks = extract_chunks(descriptions)
